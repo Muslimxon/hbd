@@ -1,0 +1,95 @@
+/* Default Styles (Desktop First) */
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+p {
+	margin: 0;
+	position: absolute;
+	font: 16px Verdana;
+	color: #eee;
+	height: 25px;
+	top: calc(100vh - 30px);
+	text-shadow: 0 0 2px white;
+}
+p a {
+	text-decoration: none;
+	color: #aaa;
+}
+span {
+	font-size: 11px;
+}
+p > a:first-of-type {
+	font-size: 20px;
+}
+body {
+	overflow: hidden;
+}
+
+/* ========================= */
+/* MEDIA QUERIES FOR DEVICES */
+/* ========================= */
+
+/* Extra small devices (phones, portrait < 480px) */
+@media (max-width: 480px) {
+    p {
+        font-size: 12px;
+        top: calc(100vh - 20px);
+    }
+    span {
+        font-size: 9px;
+    }
+    p > a:first-of-type {
+        font-size: 16px;
+    }
+    canvas {
+        width: 100vw !important;
+        height: 100vh !important;
+    }
+}
+
+/* Small devices (landscape phones, 481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    p {
+        font-size: 14px;
+        top: calc(100vh - 25px);
+    }
+    span {
+        font-size: 10px;
+    }
+    p > a:first-of-type {
+        font-size: 18px;
+    }
+    canvas {
+        width: 100vw !important;
+        height: 100vh !important;
+    }
+}
+
+/* Medium devices (tablets, 769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    p {
+        font-size: 15px;
+        top: calc(100vh - 28px);
+    }
+    span {
+        font-size: 11px;
+    }
+    p > a:first-of-type {
+        font-size: 19px;
+    }
+}
+
+/* Large devices (desktops, >1025px) */
+@media (min-width: 1025px) {
+    p {
+        font-size: 16px;
+    }
+    span {
+        font-size: 12px;
+    }
+    p > a:first-of-type {
+        font-size: 20px;
+    }
+}
